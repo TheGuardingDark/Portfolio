@@ -280,17 +280,41 @@ body {
     width: 50%;
     height: 100vh;
     overflow: auto;
+}
+
+#greenMod {
     background-color: #21a117;
     background-color: #21a117 0.4;
 }
 
+#purpleMod {
+    background-color: #843284;
+    background-color: #843284 0.4;
+}
+
+#blueMod {
+    background-color: #3232ad;
+    background-color: #3232ad 0.4;
+}
+
 .modal-content {
-    background-color: #104d0b;
     margin: 9%;
     padding: 25px;
     border: 2px solid #888;
     width: 75%;
     height: 2000px;
+}
+
+.greenContent {
+    background-color:#104d0b;
+}
+
+.purpleContent {
+    background-color: #510051;
+}
+
+.blueContent {
+    background-color: #00007a;
 }
 
 .close {

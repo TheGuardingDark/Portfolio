@@ -1,30 +1,29 @@
 
 var greenMod = document.getElementById("greenMod");
 var purpleMod = document.getElementById("purpleMod");
+var blueMod = document.getElementById("blueMod");
 var span = document.getElementsByClassName("close")[0];
+
 
 
 function openCodeMod() {
     greenMod.style.display = "block";
 }
 
-span.onclick = function() {
-    greenMod.style.display = "none";
-    purpleMod.style.display = "none";
-}
-
-window.onclick = function(event) {
-    if (event.target == greenMod) {
-        greenMod.style.display = "none";
-    }
-}
-
 function openAboutMod() {
     purpleMod.style.display = "block";
 }
 
+function openContactMod() {
+    blueMod.style.display = "block";
+}
 
-
+function closeMod() {
+    greenMod.style.display = "none";
+    purpleMod.style.display = "none";
+    blueMod.style.display = "none";
+    console.log("hi");
+}
 
 function openNav() {
     document.getElementById("mySideNav").style.width = "250px";

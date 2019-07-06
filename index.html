@@ -13,10 +13,10 @@
             <div id="mySideNav" class="sideNav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <div id="btns">
-                    <a href="#">About Me</a>
+                    <span onclick="openAboutMod()"><a>About Me</a></span>
                     <span onclick="openCodeMod()"><a>Code Portfolio</a></span> 
-                    <a href="#">Design Portfolio</a>
-                    <a href="#">Contact</a>
+                    <!-- <a>Design Portfolio</a> -->
+                    <span onclick="openContactMod()"><a>Contact</a></span>
                 </div>
             </div>
             <span onclick="openNav()"><img src="assets/images/burger.png" alt="burger" class="burger"></span>
@@ -43,8 +43,8 @@
 
             <div id="greenMod" class="modal">
                 <h2>Coding Portfolio</h2>
-                <div class="modal-content">
-                    <span class="close">&times;</span>
+                <div class="modal-content greenContent">
+                  <span onclick="closeMod()" class="close">&times;</span>
                     <div class="flip-box one">
                             <div class="flip-box-inner">
                               <div class="flip-box-front">
@@ -94,9 +94,16 @@
 
 
                            <div id="purpleMod" class="modal">
-                            <h2>Coding Portfolio</h2>
-                              <div class="modal-content">
-                                <span class="close">&times;</span>
+                            <h2>About Me</h2>
+                              <div class="modal-content purpleContent">
+                                <span onclick="closeMod()" class="close">&times;</span>
+                              </div>
+                           </div>
+
+                           <div id="blueMod" class="modal">
+                            <h2>Contact Me</h2>
+                              <div class="modal-content blueContent">
+                                <span onclick="closeMod()" class="close">&times;</span>
                               </div>
                            </div>
                    
