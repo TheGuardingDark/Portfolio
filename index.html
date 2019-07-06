@@ -14,7 +14,7 @@
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <div id="btns">
                     <a href="#">About Me</a>
-                    <a href="#">Coding Portfolio</a>
+                    <span onclick="openCodeMod()"><a>Code Portfolio</a></span> 
                     <a href="#">Design Portfolio</a>
                     <a href="#">Contact</a>
                 </div>
@@ -29,7 +29,7 @@
                 </div>
             </span>
 
-            <span onclick="openDesignMod()">
+            <span onclick="openAboutMod()">
                 <div class="spherePurple">
                     <div class="ballPurple"></div>
                 </div>
@@ -51,7 +51,8 @@
                                 <img src="assets/images/Moon Madness.png" class="modImg" alt="crime map" />
                               </div>
                               <div class="flip-box-back">
-                                <h3>This is some text about the assignment, what I did, and how to use it.</h3>
+                                <h3>Moon Madness is an app designed to research the correllation between crime and external conditions, such as moon phase, weather, time of day, and day of week. My focus was on generating the map and icons, as well as communicating with the US Muncipal API.</h3>
+                                <a class="btn" href="https://theguardingdark.github.io/ProjectOne/">Moon Madness</a>
                               </div>
                             </div>
                           </div> 
@@ -61,22 +62,43 @@
                                     <img src="assets/images/cave.jpg" class="modImg" alt="cave with rupees" />
                                   </div>
                                   <div class="flip-box-back">
-                                    <h3>This is some text about the assignment, what I did, and how to use it.</h3>
+                                    <h3>Beedle's Rupee Game utilizes jquery and javascript to generate rupees and assign random values to each. Players win by using the rupees to match the target number displayed each round.</h3>
+                                    <a class="btn" href="https://theguardingdark.github.io/unit-4-game/">Rupee Counter</a>
                                   </div>
                                 </div>
                               </div> 
                               <div class="flip-box three">
                                     <div class="flip-box-inner">
                                       <div class="flip-box-front">
-                                        <img src="assets/images/graves.jpg" class="modImg" alt="cave with rupees" />
+                                        <img src="assets/images/graves.jpg" class="modImg" alt="graves" />
                                       </div>
                                       <div class="flip-box-back">
-                                        <h3>This is some text about the assignment, what I did, and how to use it.</h3>
+                                        <h3>Guess that Horror Movie uses javascript to let players guess letters in a hangman-style game. Currently not mobile responsive.</h3>
+                                        <a class="btn" href="https://theguardingdark.github.io/Word-Guess-Game/">Word Guess</a>
                                       </div>
                                     </div>
                                   </div> 
-                    </div>
-                </div>
+                                  <div class="flip-box four">
+                                    <div class="flip-box-inner">
+                                      <div class="flip-box-front">
+                                        <img src="assets/images/gameover.jpg" class="modImg" alt="game over" />
+                                      </div>
+                                      <div class="flip-box-back">
+                                        <h3>A video game themed multiple choice quiz. Utilizes javascript timers and opacity to switch between questions. Returns answers green if correct and red if wrong.</h3>
+                                        <a class="btn" href="https://theguardingdark.github.io/TriviaGame/">Trivia Game</a>
+                                      </div>
+                                    </div>
+                                  </div> 
+                              </div>
+                           </div>
+
+
+                           <div id="purpleMod" class="modal">
+                            <h2>Coding Portfolio</h2>
+                              <div class="modal-content">
+                                <span class="close">&times;</span>
+                              </div>
+                           </div>
                    
 
             <script type="text/javascript" src="assets/js/app.js"></script>

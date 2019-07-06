@@ -1,5 +1,6 @@
 
 var greenMod = document.getElementById("greenMod");
+var purpleMod = document.getElementById("purpleMod");
 var span = document.getElementsByClassName("close")[0];
 
 
@@ -9,12 +10,17 @@ function openCodeMod() {
 
 span.onclick = function() {
     greenMod.style.display = "none";
+    purpleMod.style.display = "none";
 }
 
 window.onclick = function(event) {
     if (event.target == greenMod) {
         greenMod.style.display = "none";
     }
+}
+
+function openAboutMod() {
+    purpleMod.style.display = "block";
 }
 
 

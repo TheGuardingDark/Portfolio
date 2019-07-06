@@ -33,6 +33,7 @@ body {
 
 .sideNav a:hover {
     color: #f1f1f1;
+    cursor: pointer;
 }
 
 .sideNav .closebtn {
@@ -43,7 +44,15 @@ body {
     margin-left: 50px;
 }
 
-
+.btn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: 700;
+    color: #f1f1f1;
+    position: absolute;
+    top: 199px;
+    left: 337px;
+}
 
 
 .burger {
@@ -268,8 +277,8 @@ body {
     float: right;
     left: 50%;
     top: 0;
-    width: 45%;
-    height: 100%;
+    width: 50%;
+    height: 100vh;
     overflow: auto;
     background-color: #21a117;
     background-color: #21a117 0.4;
@@ -277,17 +286,17 @@ body {
 
 .modal-content {
     background-color: #104d0b;
-    margin: 6%;
+    margin: 9%;
     padding: 25px;
     border: 2px solid #888;
-    width: 80%;
+    width: 75%;
     height: 2000px;
 }
 
 .close {
     color: #aaa;
     float: right;
-    font-size: 28px;
+    font-size: 41px;
     font-weight: bold;
 }
 
@@ -302,22 +311,25 @@ body {
     background-color: transparent;
     width: 500px;
     height: 231px;
-    /* border: 1px solid #f1f1f1; */
     perspective: 1000px;
     position: absolute;
-    right: 42px;
+    right: 75px;
 }
 
 .one {
-    top: 169px;
+    top: 205px;
 }
 
 .two {
-    top: 427px;
+    top: 462px;
 }
 
 .three {
-    top: 788px;
+    top: 822px;
+}
+
+.four {
+    top: 1138px;
 }
 
 .flip-box-inner {
