@@ -25,14 +25,16 @@ function openContactMod() {
     greenMod.style.display = "none";
     purpleMod.style.display = "none";
     closeNav();
+
 }
 
 function closeMod() {
     greenMod.style.display = "none";
     purpleMod.style.display = "none";
     blueMod.style.display = "none";
-
 }
+
+
 
 function openNav() {
     document.getElementById("mySideNav").style.width = "250px";

@@ -104,14 +104,12 @@ body {
     width: 100px;
     margin: 0;
     position: fixed;
-    left: 525px;
-    top: 200px;
+    left: 622px;
+    top: 267px;
     background: radial-gradient(circle at 100px 100px,#21a117, #000);
-    -webkit-animation-name: molten; /* Safari 4.0 - 8.0 */
-      -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
-      animation-name: molten;
-      animation-duration: 20s;
-      animation-iteration-count: infinite; 
+    -webkit-animation: molten 3s linear 1; /* Safari 4.0 - 8.0 */  
+      animation: molten 3s linear 1;
+      
   }
   
   .ballGreen {
@@ -144,14 +142,11 @@ body {
     width: 100px;
     margin: 0;
     position: fixed;
-    left: 625px;
-    top: 354px;
+    left: 622px;
+    top: 267px;
     background: radial-gradient(circle at 100px 100px, #00007a, #000);
-    -webkit-animation-name: molten; /* Safari 4.0 - 8.0 */
-      -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
-      animation-name: molten;
-      animation-duration: 20s;
-      animation-iteration-count: infinite; 
+    -webkit-animation: molten 4s linear 1; /* Safari 4.0 - 8.0 */
+      animation: molten 4s linear 1;
   }
   
   .ballBlue {
@@ -176,7 +171,9 @@ body {
     z-index: 2;
   } 
   
-  
+  .sphereBlue:hover, .sphereGreen:hover, .spherePurple:hover {
+      cursor: pointer;
+  } 
   
   .spherePurple {
     display: block;
@@ -186,14 +183,16 @@ body {
     width: 100px;
     margin: 0;
     position: fixed;
-    left: 725px;
-    top: 200px;
+    left: 622px;
+    top: 267px;
     background: radial-gradient(circle at 100px 100px,#510051, #000);
-    -webkit-animation-name: molten; /* Safari 4.0 - 8.0 */
-      -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
-      animation-name: molten;
-      animation-duration: 20s;
-      animation-iteration-count: infinite; 
+    -webkit-animation: molten 5s linear 1; /* Safari 4.0 - 8.0 */
+      animation: molten 5s linear 1; 
+    -webkit-animation: purpleBall 4s 1;
+    -webkit-animation-delay: -5s; 
+      animation: purpleBall 4s 1;
+      animation-delay: -5s;
+      
   }
   
   .ballPurple {
@@ -219,43 +218,17 @@ body {
   } 
   
   @keyframes molten {
-      /* 0% {transform: skewY(0deg) rotate(0deg) scale(0);} */
-     /* 15% {transform: skewY(10deg) rotate(45deg) scale(1.5);} */
-     /* 25% {transform: skewY(-10deg) rotate(-45deg) scale(.5);}
-     35% {transform: skewY(10deg) rotate(20deg) scale(1.5);}
-     50% {transform: skewY(-10deg) rotate(-35deg) scale(.5);}
-     65% {transform: skewY(10deg) rotate(45deg) scale(1.5);}
-     75% {transform: skewY(-10deg) rotate(-30deg) scale(.5);}
-     85% {transform: skewY(10deg) rotate(50deg) scale(1.5);}
-     100% {transform: skewY(0deg) rotate(0deg) scale(0);} */
-    }
-  
-  /* Safari 4.0 - 8.0 */
-  /* @-webkit-keyframes molten {
-      0% {transform: skewY(0deg) rotate(0deg) scale(0);}
-     15% {transform: skewY(10deg) rotate(45deg) scale(1.5);}
-     25% {transform: skewY(-10deg) rotate(-45deg) scale(.5);}
-     35% {transform: skewY(10deg) rotate(20deg) scale(1.5);}
-     50% {transform: skewY(-10deg) rotate(-35deg) scale(.5);}
-     65% {transform: skewY(10deg) rotate(45deg) scale(1.5);}
-     75% {transform: skewY(-10deg) rotate(-30deg) scale(.5);}
-     85% {transform: skewY(10deg) rotate(50deg) scale(1.5);}
-     100% {transform: skewY(0deg) rotate(0deg) scale(0);}
-    } */
+    0% { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    75%   { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
     
-  
-    /* @keyframes molten {
-      0% {transform: skewY(0deg) rotate(0deg) scale(0);}
-     15% {transform: skewY(10deg) rotate(45deg) scale(1.5);}
-     25% {transform: skewY(-10deg) rotate(-45deg) scale(.5);}
-     35% {transform: skewY(10deg) rotate(20deg) scale(1.5);}
-     50% {transform: skewY(-10deg) rotate(-35deg) scale(.5);}
-     65% {transform: skewY(10deg) rotate(45deg) scale(1.5);}
-     75% {transform: skewY(-10deg) rotate(-30deg) scale(.5);}
-     85% {transform: skewY(10deg) rotate(50deg) scale(1.5);}
-     100% {transform: skewY(0deg) rotate(0deg) scale(0);}
-    } */
-  
+}
+
+
+@keyframes purpleBall {
+    0% {transform: translateY(10px);}
+    100% {transform: translateY(50px);}
+}
+    
 
  h2 {
      font-size: 49px;
