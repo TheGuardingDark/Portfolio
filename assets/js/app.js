@@ -8,21 +8,30 @@ var span = document.getElementsByClassName("close")[0];
 
 function openCodeMod() {
     greenMod.style.display = "block";
+    purpleMod.style.display = "none";
+    blueMod.style.display = "none";
+    closeNav();
 }
 
 function openAboutMod() {
     purpleMod.style.display = "block";
+    greenMod.style.display = "none";
+    blueMod.style.display = "none";
+    closeNav();
 }
 
 function openContactMod() {
     blueMod.style.display = "block";
+    greenMod.style.display = "none";
+    purpleMod.style.display = "none";
+    closeNav();
 }
 
 function closeMod() {
     greenMod.style.display = "none";
     purpleMod.style.display = "none";
     blueMod.style.display = "none";
-    console.log("hi");
+
 }
 
 function openNav() {
