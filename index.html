@@ -19,7 +19,7 @@
                     <span onclick="openContactMod()"><a>Contact</a></span>
                 </div>
             </div>
-            <span onclick="openNav()"><img src="assets/images/burger.png" alt="burger" class="burger"></span>
+            <span class="burgImg" onclick="openNav()"><img src="assets/images/burger.png" alt="burger" class="burger"></span>
 
           
 
@@ -41,8 +41,10 @@
                 </div>
             </span>
 
-            <div id="greenMod" class="modal">
+            <div id="greenMod" class="modal slideOut">
+              <div class="header">
                 <h2>Coding Portfolio</h2>
+              </div>
                 <div class="modal-content greenContent">
                   <span onclick="closeMod()" class="close">&times;</span>
                     <div class="flip-box one">
@@ -93,8 +95,10 @@
                            </div>
 
 
-                           <div id="purpleMod" class="modal">
-                            <h2>About Me</h2>
+                           <div id="purpleMod" class="modal slideOut">
+                             <div class="header">
+                                <h2>About Me</h2>
+                             </div>
                               <div class="modal-content purpleContent">
                                 <span onclick="closeMod()" class="close">&times;</span>
                                 <img src="assets/images/LHELLER.JPG" class="portrait" alt="portrait"/>
@@ -108,8 +112,11 @@
                               </div>
                            </div>
 
-                           <div id="blueMod" class="modal">
-                            <h2>Contact Me</h2>
+
+                           <div id="blueMod" class="modal slideOut">
+                             <div class="header">
+                                <h2>Contact Me</h2>
+                             </div>
                               <div class="modal-content blueContent">
                                 <span onclick="closeMod()" class="close">&times;</span>
                                 <form action="#">
@@ -123,11 +130,11 @@
                                   <textarea id="message" name="message"></textarea>
                                   
                                     
-                                  <button class="subbtn" type="submit" value="submit"><span>Submit </span></button>
+                                  <button type="submit" value="submit"><span>Submit </span></button>
                                   
                               </form>
                               </div>
-                           </div>
+                           </div> -->
                    
 
             <script type="text/javascript" src="assets/js/app.js"></script>
