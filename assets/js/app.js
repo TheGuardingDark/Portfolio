@@ -3,6 +3,27 @@ var span = document.getElementsByClassName("close")[0];
 var sidenav = document.getElementById("mySideNav");
 var btn = document.getElementById("btns");
 
+$(".coding").hide();
+$(".about").hide();
+$(".contact").hide();
+
+$(".sphereGreen").hover(function() {
+    $(".coding").show();
+}, function() {
+    $(".coding").hide();
+});
+
+$(".spherePurple").hover(function() {
+    $(".about").show();
+}, function() {
+    $(".about").hide();
+});
+
+$(".sphereBlue").hover(function() {
+    $(".contact").show();
+}, function() {
+    $(".contact").hide();
+});
 
 function openCodeMod() {
     $("#greenMod").removeClass("slideOut").addClass("slideIn");

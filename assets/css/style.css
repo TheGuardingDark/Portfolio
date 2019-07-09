@@ -199,6 +199,7 @@ body {
       transition: 1s; 
 
   } 
+
   
   .spherePurple {
     display: block;
@@ -521,3 +522,38 @@ button:hover span::after {
     right: 0;
 }
 
+.title {
+    color: lightyellow;
+    --color1: gold;
+    --color2: firebrick;
+    --color3: pink;
+    --color4: red;
+    font-family: Londrina Outline;
+    font-size: 25px;
+    position: absolute;
+    --interval: 1s;
+    display: block;
+    text-shadow: 
+      0 0 10px var(--color1),
+      0 0 20px var(--color2),
+      0 0 40px var(--color3),
+      0 0 80px var(--color4);
+    will-change: filter, color;
+    filter: saturate(60%);
+    animation: flicker steps(100) var(--interval) 1s infinite;
+  }
+
+  .coding {
+      top: 98px;
+      left: 99px;
+  }
+
+  .about {
+      top: 250px;
+      left: 103px;
+  }
+
+  .contact {
+      top: 402px;
+      left: 99px;
+  }
