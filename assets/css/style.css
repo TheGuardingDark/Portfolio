@@ -63,6 +63,10 @@ body {
     z-index: 1;
     -webkit-animation-name: burgerBounce; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: burgerBounce;
+    -moz-animation-duration: 4s;
+    -moz-animation-iteration-count: infinite;
     animation-name: burgerBounce;
     animation-duration: 4.5s;
     animation-iteration-count: infinite;
@@ -75,6 +79,14 @@ body {
    50% {top: 240px;}
    75% {top: 260px;}
    100% {top: 240px;}
+  }
+
+  @-moz-keyframes burgerBounce {
+    0% {top: 240px;}
+    25% {top: 260px;}
+    50% {top: 240px;}
+    75% {top: 260px;}
+    100% {top: 240px;} 
   }
   
 
@@ -91,10 +103,10 @@ body {
 
 }
 
-@media screen and (max-height: 450px) {
+/* @media screen and (max-height: 450px) {
     .sideNav {padding-top: 15px;}
     .sideNav a {font-size: 18px;}
-}
+} */
 
 
 
@@ -115,6 +127,11 @@ body {
     -webkit-animation-delay: 0s, 5s;
     -webkit-animation-direction: linear, linear;
     -webkit-animation-iteration-count:  1, infinite; /* Safari 4.0 - 8.0 */
+    -moz-animation-name: molten, bug; 
+    -moz-animation-duration: 5s, 4s;
+    -moz-animation-delay: 0s, 5s;
+    -moz-animation-direction: linear, linear;
+    -moz-animation-iteration-count:  1, infinite;
     animation-name: molten, bug; 
     animation-duration: 5s, 4s;
     animation-delay: 0s, 5s;
@@ -162,6 +179,11 @@ body {
     -webkit-animation-delay: 0s, 5s;
     -webkit-animation-direction: linear, linear;
     -webkit-animation-iteration-count:  1, infinite; /* Safari 4.0 - 8.0 */
+    -moz-animation-name: molten, bug; 
+    -moz-animation-duration: 5s, 4s;
+    -moz-animation-delay: 0s, 5s;
+    -moz-animation-direction: linear, linear;
+    -moz-animation-iteration-count:  1, infinite;
     animation-name: molten, bug; 
     animation-duration: 5s, 4s;
     animation-delay: 0s, 5s;
@@ -218,6 +240,11 @@ body {
     -webkit-animation-delay: 0s, 5s;
     -webkit-animation-direction: linear, linear;
     -webkit-animation-iteration-count:  1, infinite; /* Safari 4.0 - 8.0 */
+    -moz-animation-name: molten, bug; 
+    -moz-animation-duration: 5s, 4s;
+    -moz-animation-delay: 0s, 5s;
+    -moz-animation-direction: linear, linear;
+    -moz-animation-iteration-count:  1, infinite;
     animation-name: molten, bug; 
     animation-duration: 5s, 4s;
     animation-delay: 0s, 5s;
@@ -247,10 +274,40 @@ body {
     z-index: 2;
   } 
   
+
+
+  @-webkit-keyframes molten {
+    0% { transform: rotate(0deg) translateX(150px) rotate(0deg); pointer-events: none; }
+    75%   { transform: rotate(360deg) translateX(150px) rotate(-360deg); pointer-events: none;} 
+    100% {transform: translateX(-5px); pointer-events: none;} 
+}
+
+  @-moz-keyframes molten {
+    0% { transform: rotate(0deg) translateX(150px) rotate(0deg); pointer-events: none; }
+    75%   { transform: rotate(360deg) translateX(150px) rotate(-360deg); pointer-events: none;} 
+    100% {transform: translateX(-5px); pointer-events: none;} 
+}
+
   @keyframes molten {
     0% { transform: rotate(0deg) translateX(150px) rotate(0deg); pointer-events: none; }
     75%   { transform: rotate(360deg) translateX(150px) rotate(-360deg); pointer-events: none;} 
     100% {transform: translateX(-5px); pointer-events: none;} 
+}
+
+@-webkit-keyframes bug {
+    0% {transform: translateX(-5px);}
+    25% {transform: translateX(5px);}
+    50% {transform: translateX(-5px);}
+    75% {transform: translateX(5px);}
+    100% {transform: translateX(-5px);}
+}
+
+@-moz-keyframes bug {
+    0% {transform: translateX(-5px);}
+    25% {transform: translateX(5px);}
+    50% {transform: translateX(-5px);}
+    75% {transform: translateX(5px);}
+    100% {transform: translateX(-5px);}
 }
 
 @keyframes bug {
@@ -309,6 +366,16 @@ body {
       animation: slide 1s; 
 }
 
+@-webkit-keyframes slide {
+    0% {transform: translateX(693px);}
+    100% {transform: translateX(0px);}
+}
+
+@-moz-keyframes slide {
+    0% {transform: translateX(693px);}
+    100% {transform: translateX(0px);}
+}
+
 @keyframes slide {
     0% {transform: translateX(693px);}
     100% {transform: translateX(0px);}
@@ -321,6 +388,16 @@ body {
 }
 
 @keyframes slideOut {
+    0% {transform: translateX(0px);}
+    100% {transform: translateX(693px);}
+}
+
+@-webkit-keyframes slideOut {
+    0% {transform: translateX(0px);}
+    100% {transform: translateX(693px);}
+}
+
+@-moz-keyframes slideOut {
     0% {transform: translateX(0px);}
     100% {transform: translateX(693px);}
 }
@@ -430,11 +507,17 @@ label {
     width: 100%;
     height: 100%;
     text-align: center;
+    -webkit-transition: transform 0.8s;
+    -moz-transition: transform 0.8s;
     transition: transform 0.8s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
 
 .flip-box:hover .flip-box-inner {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
     transform: rotateX(180deg);
 }
 
@@ -453,6 +536,8 @@ label {
 .flip-box-back {
     background-color: #79c673;
     color: #ffffff;
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
     transform: rotateX(180deg);
 }
 
@@ -540,6 +625,8 @@ button:hover span::after {
       0 0 80px var(--color4);
     will-change: filter, color;
     filter: saturate(60%);
+    -webkit-animation: flicker steps(100) var(--interval) 1s infinite;
+    -moz-animation: flicker steps(100) var(--interval) 1s infinite;
     animation: flicker steps(100) var(--interval) 1s infinite;
   }
 
