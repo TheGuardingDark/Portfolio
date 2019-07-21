@@ -6,6 +6,7 @@ var btn = document.getElementById("btns");
 $(".coding").hide();
 $(".about").hide();
 $(".contact").hide();
+$(".linkedIn").hide();
 
 $(".sphereGreen").hover(function() {
     $(".coding").show();
@@ -23,6 +24,12 @@ $(".sphereBlue").hover(function() {
     $(".contact").show();
 }, function() {
     $(".contact").hide();
+});
+
+$(".burgImg").hover(function() {
+    $(".linkedIn").show();
+}, function() {
+    $(".linkedIn").hide();
 });
 
 function openCodeMod() {

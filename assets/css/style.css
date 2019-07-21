@@ -52,7 +52,15 @@ body {
     color: #000c06;
     position: absolute;
     top: 199px;
+}
+
+.btnR {
     left: 337px;
+}
+
+.btnL {
+    right: 344px;
+    text-align: left;
 }
 
 
@@ -102,6 +110,7 @@ body {
     cursor: pointer;
 
 }
+
 
 /* @media screen and (max-height: 450px) {
     .sideNav {padding-top: 15px;}
@@ -502,6 +511,10 @@ label {
     top: 1235px;
 }
 
+.five {
+    top: 1546px;
+}
+
 .flip-box-inner {
     position: relative;
     width: 100%;
@@ -643,4 +656,9 @@ button:hover span::after {
   .contact {
       top: 402px;
       left: 99px;
+  }
+
+  .linkedIn {
+      top: 279px;
+      right: 179px;
   }
